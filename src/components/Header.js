@@ -238,7 +238,7 @@ export default function Header() {
                   <div className="flex items-center px-5">
                     <Link to={"/profile-page"}
                       onClick={() => {
-                        closePanel();
+                        // closePanel();
                       }}
                     >
                       <div>

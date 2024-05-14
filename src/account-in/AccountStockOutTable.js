@@ -65,7 +65,7 @@ function AccountStockOutTable() {
     try {
       const response = await axios.put(
         `https://servers-beit.onrender.com/api/update/${id}`,
-        newData,
+        
         {
           withCredentials: true,
         }
@@ -187,7 +187,7 @@ function AccountStockOutTable() {
                     {isAdmin && (
                       <td className="flex mt-2">
                         <button
-                          onClick={() => handleUpdate(dataItem.id, newData)}
+                          onClick={() => handleUpdate(dataItem.id, )}
                           className="mr-2 bg-darkgray hover:outline hover:bg-white text-white hover:text-darkgray font-bold py-2 px-4 rounded"
                         >
                           Update
